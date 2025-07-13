@@ -34,7 +34,7 @@ import vercelLogo from './assets/tech_logo/vercel.png';
 // import csharpLogo from './assets/tech_logo/csharp.png';
 
 // Experience Section Logo's
-import outlierLogo from './assets/company_logo/Outlier.png';
+import outlierLogo from './assets/company_logo/outlier.png';
 // import agcLogo from './assets/company_logo/agc_logo.png';
 // import newtonschoolLogo from './assets/company_logo/newtonschool_logo.png';
 
