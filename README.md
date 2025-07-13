@@ -17,7 +17,7 @@
 ### 1. Clone the Repo
 
 ```bash
-git clone [https://github.com/codingmastr/Tarun-s-Portfolio.git]
+git clone [https://github.com/roshangupta3626/Roshan-Portfolio.git]
 cd your-repo-name
 ````
 
