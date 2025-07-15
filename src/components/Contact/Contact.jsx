@@ -57,7 +57,7 @@ const Contact = () => {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/path-to-your-cv.pdf';
+    link.href = 'https://drive.google.com/file/d/16V15Bm3odebbVNaD_pSb87Xu_82irLvk/view?usp=sharing';
     link.download = 'Roshan_Gupta_CV.pdf';
     document.body.appendChild(link);
     link.click();

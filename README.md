@@ -39,8 +39,7 @@ npm start
 npm run build
 ```
 
-
 ## 🌟 Credits
 
-This project was created with ❤️ by Roshan Gupta).
+This project was created with ❤️ by [Roshan Gupta](https://roshangupta07.vercel.app/).
 If you like it, feel free to ⭐ this repository and share!
