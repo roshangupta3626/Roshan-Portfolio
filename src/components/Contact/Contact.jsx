@@ -2,15 +2,24 @@ import { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+<<<<<<< HEAD
 import roshanPhoto from '../../assets/roshanphoto.png';
+=======
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
 
+<<<<<<< HEAD
   // Initialize EmailJS with your public key
   useEffect(() => {
     emailjs.init("PgO4nFD7JLFVSO5Bw"); // Updated public key
+=======
+  // Initialize EmailJS
+  useEffect(() => {
+    emailjs.init("Rz7W9pVF0HdDryNNL");
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
   }, []);
 
   const sendEmail = (e) => {
@@ -20,10 +29,17 @@ const Contact = () => {
     // EmailJS configuration for sending to your Gmail
     emailjs
       .sendForm(
+<<<<<<< HEAD
         "service_36a4bpn",        // Your new SMTP EmailJS service ID
         "template_g6wclmi",       // Updated to your actual EmailJS template ID
         form.current,
         "PgO4nFD7JLFVSO5Bw"        // Updated EmailJS public key
+=======
+        "service_axbtt7a",        // Your EmailJS service ID
+        "template_1ziboq3",       // Your EmailJS template ID
+        form.current,
+        "Rz7W9pVF0HdDryNNL"       // Your EmailJS public key
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
       )
       .then(
         (result) => {
@@ -42,6 +58,7 @@ const Contact = () => {
         },
         (error) => {
           setIsLoading(false);
+<<<<<<< HEAD
           console.error("FAILED...", error);
           let errorMsg = "Failed to send message. Please try again.";
           if (error && error.text) {
@@ -52,6 +69,12 @@ const Contact = () => {
           toast.error(errorMsg, {
             position: "top-right",
             autoClose: 5000,
+=======
+          console.error("FAILED...", error.text);
+          toast.error("Failed to send message. Please try again.", {
+            position: "top-right",
+            autoClose: 3000,
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
             hideProgressBar: false,
             closeOnClick: true,
             pauseOnHover: true,
@@ -111,7 +134,11 @@ const Contact = () => {
               <div className="flex items-center space-x-4">
                 <div className="relative">
                   <img 
+<<<<<<< HEAD
                     src={roshanPhoto}
+=======
+                    src="/src/assets/profile2.png" 
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                     alt="Roshan Gupta" 
                     className="w-16 h-16 rounded-full object-cover border-2 border-yellow-400/50 shadow-md hover:scale-105 transition-transform duration-300"
                   />
@@ -119,9 +146,15 @@ const Contact = () => {
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-bold text-white mb-1">Roshan Gupta</h3>
+<<<<<<< HEAD
                   <p className="text-yellow-300 font-medium text-sm mb-1">Third-Year Computer Science Student</p>
                   <p className="text-gray-400 text-xs">
                     Full Stack Developer & Technology Enthusiast
+=======
+                  <p className="text-yellow-300 font-medium text-sm mb-1">3rd Year Student</p>
+                  <p className="text-gray-400 text-xs">
+                    Full Stack Developer | Tech Enthusiast
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                   </p>
                 </div>
               </div>
@@ -130,6 +163,10 @@ const Contact = () => {
             {/* Compact Download CV Card */}
             <div className="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 backdrop-blur-sm rounded-xl p-5 border border-yellow-400/30 hover:border-yellow-400/50 transition-all duration-300">
               <h4 className="text-base font-semibold text-white mb-2 flex items-center">
+<<<<<<< HEAD
+=======
+                <span className="mr-2">📄</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                 Download CV
               </h4>
               <p className="text-gray-300 text-xs mb-3">
@@ -147,28 +184,44 @@ const Contact = () => {
             {/* Direct Email Card */}
             <div className="bg-gradient-to-r from-yellow-500/10 to-amber-500/10 backdrop-blur-sm rounded-xl p-5 border border-yellow-400/30 hover:border-yellow-400/50 transition-all duration-300">
               <h4 className="text-base font-semibold text-white mb-2 flex items-center">
+<<<<<<< HEAD
+=======
+                <span className="mr-2">📧</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                 Send Direct Email
               </h4>
               <p className="text-gray-300 text-xs mb-3">
                 Open your email client directly
               </p>
               <a
+<<<<<<< HEAD
                 href="mailto:rg9885468@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Roshan%2C%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards%2C"
                 className="w-full bg-gradient-to-r from-yellow-600 to-amber-700 hover:from-yellow-700 hover:to-amber-800 text-white font-medium py-2 px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/25 flex items-center justify-center space-x-2 text-sm"
                 aria-label="Send an email to Roshan Gupta via your email client"
                 title="Opens your default email client to send an email"
+=======
+                href="mailto:rg9885468@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Roshan,%0A%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.%0A%0ABest%20regards,"
+                className="w-full bg-gradient-to-r from-yellow-600 to-amber-700 hover:from-yellow-700 hover:to-amber-800 text-white font-medium py-2 px-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/25 flex items-center justify-center space-x-2 text-sm"
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
               >
                 <span>📧</span>
                 <span>Send Email</span>
               </a>
+<<<<<<< HEAD
               <p className="text-xs text-gray-400 mt-2 text-center">
                 <span className="italic">Note: This will open your default email app. If nothing happens, please use the contact form or email me directly at <a href="mailto:rg9885468@gmail.com" className="underline text-yellow-300">rg9885468@gmail.com</a>.</span>
               </p>
+=======
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
             </div>
 
             {/* Compact Contact Info */}
             <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-5 border border-slate-700/50 hover:border-yellow-400/40 transition-all duration-300">
               <h4 className="text-base font-semibold text-white mb-3 flex items-center">
+<<<<<<< HEAD
+=======
+                <span className="mr-2">📧</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                 Contact Info
               </h4>
               <div className="space-y-2">
@@ -194,7 +247,11 @@ const Contact = () => {
           {/* Center - Contact Form */}
           <div className="lg:col-span-2 bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700/50 hover:border-yellow-400/40 transition-all duration-300 hover:shadow-lg">
             <h3 className="text-2xl font-bold text-white mb-6 text-center">
+<<<<<<< HEAD
               Send me a message
+=======
+              Send me a message <span className="text-yellow-400">💬</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
             </h3>
 
             <form ref={form} onSubmit={sendEmail} className="space-y-5">
@@ -218,6 +275,10 @@ const Contact = () => {
                   />
                 </div>
               </div>
+<<<<<<< HEAD
+=======
+              
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
               <div className="group">
                 <input
                   type="text"
@@ -227,6 +288,10 @@ const Contact = () => {
                   className="w-full p-3 rounded-lg bg-slate-700/30 text-white border border-slate-600/50 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 transition-all duration-300 placeholder-gray-400 group-hover:border-yellow-400/50"
                 />
               </div>
+<<<<<<< HEAD
+=======
+              
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
               <div className="group">
                 <textarea
                   name="message"
@@ -236,7 +301,11 @@ const Contact = () => {
                   className="w-full p-3 rounded-lg bg-slate-700/30 text-white border border-slate-600/50 focus:outline-none focus:border-yellow-500 focus:ring-2 focus:ring-yellow-500/20 transition-all duration-300 placeholder-gray-400 group-hover:border-yellow-400/50 resize-none"
                 />
               </div>
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
               <button
                 type="submit"
                 disabled={isLoading}
@@ -249,6 +318,10 @@ const Contact = () => {
                   </>
                 ) : (
                   <>
+<<<<<<< HEAD
+=======
+                    <span>📤</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                     <span>Send Message</span>
                   </>
                 )}

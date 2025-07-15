@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+import React from 'react';
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 import ReactTypingEffect from 'react-typing-effect';
 import Tilt from 'react-parallax-tilt';
 import profileImage from '../../assets/roshanphoto.png';
@@ -5,6 +9,7 @@ import profileImage from '../../assets/roshanphoto.png';
 const About = () => {
   return (
     <section
+<<<<<<< HEAD
   id="about"
   className="min-h-screen flex flex-col justify-center pt-16 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
 >
@@ -12,6 +17,11 @@ const About = () => {
 
 
 
+=======
+      id="about"
+      className="min-h-screen flex flex-col justify-center pt-24 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900"
+    >
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
       {/* Welcome Section with Animated SVG */}
       <div className="absolute top-0 left-0 w-full h-32">
         <img 
@@ -36,7 +46,11 @@ const About = () => {
             {/* Greeting with Animation */}
             <div className="space-y-4 animate-fade-in-up">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
+<<<<<<< HEAD
                 Hello, I&apos;m
+=======
+                Hi, I am
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
               </h1>
               <h2 className="text-5xl sm:text-6xl md:text-7xl font-bold bg-gradient-to-r from-yellow-400 via-amber-400 to-orange-400 bg-clip-text text-transparent leading-tight animate-gradient">
                 Roshan Gupta
@@ -65,7 +79,13 @@ const About = () => {
 
             {/* About Me Paragraph */}
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+<<<<<<< HEAD
               I am a dedicated third-year Computer Science student and full-stack developer with experience building scalable web applications. Skilled in both front-end and back-end development, I specialize in modern technologies to deliver seamless user experiences and robust solutions.
+=======
+              I am a passionate 3rd-year student and full-stack developer with experience in 
+              building scalable web applications. Skilled in both front-end and back-end development, 
+              I specialize in modern technologies to create seamless user experiences and efficient solutions.
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
             </p>
 
             {/* Action Buttons */}
@@ -76,6 +96,10 @@ const About = () => {
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-yellow-600 to-amber-600 hover:from-yellow-700 hover:to-amber-700 text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-yellow-500/25 animate-bounce-in"
               >
+<<<<<<< HEAD
+=======
+                <span className="mr-2 group-hover:rotate-12 transition-transform duration-300">📄</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                 Download CV
               </a>
               
@@ -83,6 +107,10 @@ const About = () => {
                 href="#contact"
                 className="group inline-flex items-center justify-center px-8 py-4 border-2 border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-white font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 animate-bounce-in-delay"
               >
+<<<<<<< HEAD
+=======
+                <span className="mr-2 group-hover:rotate-12 transition-transform duration-300">💬</span>
+>>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                 Contact Me
               </a>
             </div>
