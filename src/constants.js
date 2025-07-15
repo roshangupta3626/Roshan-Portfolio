@@ -199,13 +199,8 @@ export const SkillsInfo = [
         "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
       image: npmLogo,
       tags: ["React JS", "Node.js", "NPM", "Validation"],
-<<<<<<< HEAD
       github: "#", // TODO: Update with real repository link
       webapp: "#", // TODO: Update with real live demo link
-=======
-      github: "https://github.com/roshangupta3626",
-      webapp: "https://github.com/roshangupta3626",
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
     },
     {
       id: 4,
@@ -214,13 +209,8 @@ export const SkillsInfo = [
         "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
       image: taskremLogo,
       tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-<<<<<<< HEAD
       github: "#", // TODO: Update with real repository link
       webapp: "#", // TODO: Update with real live demo link
-=======
-      github: "https://github.com/roshangupta3626",
-      webapp: "https://github.com/roshangupta3626",
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
     },
     {
       id: 5,
@@ -239,13 +229,8 @@ export const SkillsInfo = [
         "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
       image: cmLogo,
       tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-<<<<<<< HEAD
       github: "#", // TODO: Update with real repository link
       webapp: "#", // TODO: Update with real live demo link
-=======
-      github: "https://github.com/roshangupta3626",
-      webapp: "https://github.com/roshangupta3626",
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
     },
     {
       id: 7,

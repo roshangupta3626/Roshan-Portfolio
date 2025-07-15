@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import { useState } from "react";
-=======
-import React, { useState } from "react";
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 import { projects } from "../../constants";
 
 const Work = () => {
@@ -100,89 +96,48 @@ const Work = () => {
 
       {/* Modal Container */}
       {selectedProject && (
-<<<<<<< HEAD
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-2 sm:p-4">
-          <div className="relative bg-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-xl mx-auto overflow-hidden border border-slate-700/50 flex flex-col">
+          <div className="relative bg-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl mx-auto overflow-hidden border border-slate-700/50 flex flex-col items-center justify-center">
             {/* Close Button - Always visible, top right, large and touch-friendly */}
             <button
               onClick={handleCloseModal}
-              className="absolute top-2 right-2 z-10 text-white text-3xl font-bold hover:text-yellow-400 transition-colors duration-300 bg-black/40 rounded-full w-10 h-10 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-lg cursor-pointer"
+              className="absolute top-4 right-4 z-10 text-white text-4xl font-extrabold hover:text-yellow-400 transition-colors duration-300 bg-black/60 rounded-full w-12 h-12 flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-yellow-400 shadow-xl cursor-pointer border-2 border-yellow-400"
               aria-label="Close modal"
+              style={{ boxShadow: '0 2px 16px 0 rgba(0,0,0,0.4)' }}
             >
               &times;
             </button>
-            <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-slate-800/50 px-2 py-4">
-                <img
-                  src={selectedProject.image}
-                  alt={selectedProject.title}
-                  className="w-full max-w-xs object-contain rounded-xl shadow-2xl"
-                />
-              </div>
-              <div className="p-3 sm:p-4">
-                <h3 className="text-xl sm:text-2xl font-bold text-white mb-3">
-                  {selectedProject.title}
-                </h3>
-                <p className="text-gray-300 mb-4 text-sm sm:text-base leading-relaxed">
-                  {selectedProject.description}
-                </p>
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {selectedProject.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 text-yellow-300 px-2 sm:px-3 py-1 text-xs rounded-lg border border-yellow-400/30"
-=======
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 backdrop-blur-sm p-4">
-          <div className="bg-slate-900/95 backdrop-blur-md rounded-2xl shadow-2xl w-full max-w-4xl overflow-hidden relative border border-slate-700/50">
-            <div className="flex justify-end p-4">
-              <button
-                onClick={handleCloseModal}
-                className="text-white text-3xl font-bold hover:text-yellow-400 transition-colors duration-300"
-              >
-                &times;
-              </button>
-            </div>
-
-            <div className="flex flex-col">
+            <div className="flex flex-col w-full items-center justify-center">
               <div className="w-full flex justify-center bg-slate-800/50 px-4 py-6">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
-                  className="w-full max-w-2xl object-contain rounded-xl shadow-2xl"
+                  className="w-full max-w-xs sm:max-w-md md:max-w-lg object-contain rounded-xl shadow-2xl"
                 />
               </div>
-              <div className="p-8">
-                <h3 className="text-3xl font-bold text-white mb-4">
+              <div className="p-4 sm:p-8 w-full">
+                <h3 className="text-2xl sm:text-3xl font-bold text-white mb-4 text-center">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-300 mb-6 text-lg leading-relaxed">
+                <p className="text-gray-300 mb-6 text-base sm:text-lg leading-relaxed text-center">
                   {selectedProject.description}
                 </p>
-                <div className="flex flex-wrap gap-2 mb-8">
+                <div className="flex flex-wrap gap-2 mb-8 justify-center">
                   {selectedProject.tags.map((tag, index) => (
                     <span
                       key={index}
-                      className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 text-yellow-300 px-4 py-2 text-sm rounded-lg border border-yellow-400/30"
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
+                      className="bg-gradient-to-r from-yellow-500/20 to-amber-500/20 text-yellow-300 px-3 sm:px-4 py-1 sm:py-2 text-xs sm:text-sm rounded-lg border border-yellow-400/30"
                     >
                       {tag}
                     </span>
                   ))}
                 </div>
-<<<<<<< HEAD
-                <div className="flex flex-col sm:flex-row gap-3">
-=======
-                <div className="flex gap-4">
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="flex-1 bg-slate-800 hover:bg-yellow-600 text-gray-300 hover:text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300 transform hover:scale-105 text-sm"
-=======
                     className="flex-1 bg-slate-800 hover:bg-yellow-600 text-gray-300 hover:text-white px-6 py-3 rounded-lg text-center font-semibold transition-all duration-300 transform hover:scale-105"
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                   >
                     <span className="mr-2">📄</span>
                     View Code
@@ -191,11 +146,7 @@ const Work = () => {
                     href={selectedProject.webapp}
                     target="_blank"
                     rel="noopener noreferrer"
-<<<<<<< HEAD
-                    className="flex-1 bg-gradient-to-r from-yellow-600 to-amber-700 hover:from-yellow-700 hover:to-amber-800 text-white px-4 py-2 rounded-lg text-center font-semibold transition-all duration-300 transform hover:scale-105 text-sm"
-=======
                     className="flex-1 bg-gradient-to-r from-yellow-600 to-amber-700 hover:from-yellow-700 hover:to-amber-800 text-white px-6 py-3 rounded-lg text-center font-semibold transition-all duration-300 transform hover:scale-105"
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                   >
                     <span className="mr-2">🌐</span>
                     View Live

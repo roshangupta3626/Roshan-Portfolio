@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 import { FaGithub, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
@@ -23,11 +19,7 @@ const Footer = () => {
             <span className="text-white">Gupta</span>
             <span className="text-yellow-400">/&gt;</span>
           </h2>
-<<<<<<< HEAD
-          <p className="text-gray-300 text-sm mb-4">Full Stack Developer & Technology Enthusiast</p>
-=======
           <p className="text-gray-300 text-sm mb-4">Full Stack Developer & Tech Enthusiast</p>
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 
           {/* Social Media Icons */}
           <div className="flex justify-center space-x-4 mb-4">
@@ -59,11 +51,7 @@ const Footer = () => {
               © 2025 Roshan Gupta. All rights reserved.
             </p>
             <p className="text-gray-500 text-xs">
-<<<<<<< HEAD
-              Built with React & Tailwind CSS
-=======
               Built with ❤️ using React & Tailwind CSS
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
             </p>
           </div>
         </div>

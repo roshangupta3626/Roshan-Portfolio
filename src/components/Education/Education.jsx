@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-import React from "react";
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
 import { education } from "../../constants";
 
 const Education = () => {
@@ -45,19 +41,11 @@ const Education = () => {
                 }`}
               >
                 {/* Timeline Circle */}
-<<<<<<< HEAD
-                <div className="absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-yellow-400 w-14 h-14 rounded-full flex justify-center items-center z-10 hidden lg:flex shadow-lg">
-                  <img
-                    src={edu.img}
-                    alt={edu.school}
-                    className="w-10 h-10 object-contain rounded-full bg-white"
-=======
                 <div className="absolute left-1/2 transform -translate-x-1/2 bg-white border-4 border-yellow-400 w-12 h-12 rounded-full flex justify-center items-center z-10 hidden lg:flex shadow-lg">
                   <img
                     src={edu.img}
                     alt={edu.school}
                     className="w-8 h-8 object-cover rounded-full"
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                   />
                 </div>
 
@@ -69,19 +57,11 @@ const Education = () => {
                 >
                   {/* Header with School Info */}
                   <div className="flex items-center space-x-4 mb-4">
-<<<<<<< HEAD
-                    <div className="w-20 h-16 bg-white rounded-lg overflow-hidden flex-shrink-0 shadow-lg flex items-center justify-center">
-                      <img
-                        src={edu.img}
-                        alt={edu.school}
-                        className="max-w-full max-h-full object-contain"
-=======
                     <div className="w-16 h-12 bg-white rounded-lg overflow-hidden flex-shrink-0 shadow-lg">
                       <img
                         src={edu.img}
                         alt={edu.school}
                         className="w-full h-full object-cover"
->>>>>>> 45edcea682380822e767e3a175f17cae2b4bf562
                       />
                     </div>
                     <div className="flex-1">
